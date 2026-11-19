@@ -1,0 +1,10 @@
+{
+ "artifact": "https://claude.ai/artifact/JEpEyijsTpD1y83ut7Zia7",
+ "built": "2026-11-19T09:47:01+00:00",
+ "columns": 725,
+ "example_queries": 69,
+ "foreign_keys_date": "2026-10-16T18:38:17Z",
+ "models_date": "2026-11-09T22:11:23Z",
+ "tables": 31,
+ "tap_date": "2026-11-19"
+}

@@ -1,0 +1,91 @@
+{
+ "lc_classifier_BHRF_forced_phot": {
+  "AGN": 0,
+  "Blazar": 1,
+  "CEP": 2,
+  "CV/Nova": 3,
+  "DSCT": 4,
+  "EA": 5,
+  "EB/EW": 6,
+  "LPV": 7,
+  "Microlensing": 8,
+  "Periodic-Other": 9,
+  "QSO": 10,
+  "RRLab": 11,
+  "RRLc": 12,
+  "RSCVn": 13,
+  "SESN": 14,
+  "SLSN": 15,
+  "SNII": 16,
+  "SNIIn": 17,
+  "SNIa": 18,
+  "TDE": 19,
+  "YSO": 20
+ },
+ "lc_classifier_BHRF_forced_phot_periodic": {
+  "CEP": 0,
+  "DSCT": 1,
+  "EA": 2,
+  "EB/EW": 3,
+  "LPV": 4,
+  "Periodic-Other": 5,
+  "RRLab": 6,
+  "RRLc": 7,
+  "RSCVn": 8
+ },
+ "lc_classifier_BHRF_forced_phot_stochastic": {
+  "AGN": 0,
+  "Blazar": 1,
+  "CV/Nova": 2,
+  "Microlensing": 3,
+  "QSO": 4,
+  "YSO": 5
+ },
+ "lc_classifier_BHRF_forced_phot_top": {
+  "Periodic": 0,
+  "Stochastic": 1,
+  "Transient": 2
+ },
+ "lc_classifier_BHRF_forced_phot_transient": {
+  "SESN": 0,
+  "SLSN": 1,
+  "SNII": 2,
+  "SNIIn": 3,
+  "SNIa": 4,
+  "TDE": 5
+ },
+ "stamp_classifier": {
+  "AGN": 1,
+  "SN": 0,
+  "VS": 2,
+  "asteroid": 3,
+  "bogus": 4,
+  "satellite": 5
+ },
+ "stamp_classifier_2025_beta": {
+  "AGN": 1,
+  "SN": 0,
+  "VS": 2,
+  "asteroid": 3,
+  "bogus": 4,
+  "satellite": 5
+ },
+ "stamp_classifier_rubin_beta": {
+  "AGN": 1,
+  "SN": 0,
+  "VS": 2,
+  "asteroid": 3,
+  "bogus": 4
+ },
+ "stamp_classifier_rubin_beta_20260421": {
+  "AGN": 1,
+  "SN": 0,
+  "VS": 2,
+  "asteroid": 3,
+  "bogus": 4
+ },
+ "stamp_sn_offnuclear_rubin_beta": {
+  "SNoffnuclear": 0,
+  "notSNoffnuclear": 1
+ }
+}

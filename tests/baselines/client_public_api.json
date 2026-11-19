@@ -1,0 +1,22 @@
+{
+ "catshtm_catalog_translator": "(self, catalog)",
+ "catshtm_conesearch": "(self, ra, dec, radius, catalog_name='all', format='pandas')",
+ "catshtm_crossmatch": "(self, ra, dec, radius, catalog_name='all', format='pandas')",
+ "catshtm_redshift": "(self, ra, dec, radius, format='votable', verbose=False)",
+ "get_avro": "(self, oid, candid=None, survey=None)",
+ "get_stamps": "(self, oid, candid=None, measurement_id=None, include_variance_and_psf=False, format='HDUList', survey=None)",
+ "load_config_from_object": "(self, object)",
+ "plot_stamps": "(self, oid, candid=None, measurement_id=None, survey=None)",
+ "query_classes": "(self, classifier_name, classifier_version, format='json', survey: str | None = None, **kwargs)",
+ "query_classifiers": "(self, format='json', survey: str | None = None, **kwargs)",
+ "query_detections": "(self, oid: str | int, format: str = 'json', survey: str | None = None, index=None, sort=None)",
+ "query_feature": "(self, oid, name, format='json', survey: str | None = None)",
+ "query_features": "(self, oid, format='json', survey: str | None = None, index=None, sort=None)",
+ "query_forced_photometry": "(self, oid, format='json', survey: str | None = None, index=None, sort=None)",
+ "query_lightcurve": "(self, oid, format='json', survey: str | None = None)",
+ "query_magstats": "(self, oid, format='json', survey: str | None = None, index=None, sort=None)",
+ "query_non_detections": "(self, oid: str | int, format: str = 'json', survey: str | None = None, index=None, sort=None)",
+ "query_object": "(self, oid, format='json', survey: str | None = None, return_survey_extra: bool = True, **kwargs)",
+ "query_objects": "(self, format='pandas', index=None, sort=None, survey: str | None = None, **kwargs)",
+ "query_probabilities": "(self, oid, format='json', survey: str | None = None, index=None, sort=None)"
+}

@@ -1,0 +1,132 @@
+{
+ "alerce_tap.allwise": [
+  "oid_catalog"
+ ],
+ "alerce_tap.band": [
+  "band",
+  "sid",
+  "tid"
+ ],
+ "alerce_tap.catalog_id_lut": [
+  "catid"
+ ],
+ "alerce_tap.classifier": [
+  "classifier_id"
+ ],
+ "alerce_tap.detection": [
+  "measurement_id",
+  "oid",
+  "sid"
+ ],
+ "alerce_tap.feature": [
+  "band",
+  "feature_id",
+  "oid",
+  "sid"
+ ],
+ "alerce_tap.feature_name_lut": [
+  "feature_id",
+  "sid"
+ ],
+ "alerce_tap.feature_version_lut": [
+  "sid",
+  "version_id"
+ ],
+ "alerce_tap.forced_photometry": [
+  "measurement_id",
+  "oid",
+  "sid"
+ ],
+ "alerce_tap.gaiadr3_source": [
+  "oid_catalog"
+ ],
+ "alerce_tap.lsst_detection": [
+  "measurement_id",
+  "oid"
+ ],
+ "alerce_tap.lsst_dia_object": [
+  "oid"
+ ],
+ "alerce_tap.lsst_forced_photometry": [
+  "measurement_id",
+  "oid"
+ ],
+ "alerce_tap.lsst_mpc_orbits": [
+  "ssobjectid"
+ ],
+ "alerce_tap.lsst_ss_detection": [
+  "measurement_id",
+  "ssobjectid"
+ ],
+ "alerce_tap.lsst_ss_object": [
+  "oid"
+ ],
+ "alerce_tap.magstat": [
+  "band",
+  "oid",
+  "sid"
+ ],
+ "alerce_tap.object": [
+  "firstmjd",
+  "lastmjd",
+  "meandec",
+  "meanra",
+  "n_det",
+  "oid",
+  "sid"
+ ],
+ "alerce_tap.probability": [
+  "class_id",
+  "classifier_id",
+  "oid",
+  "probability",
+  "ranking",
+  "sid"
+ ],
+ "alerce_tap.sid_lut": [
+  "sid"
+ ],
+ "alerce_tap.taxonomy": [
+  "class_id",
+  "classifier_id"
+ ],
+ "alerce_tap.xmatch": [
+  "catid",
+  "oid",
+  "sid"
+ ],
+ "alerce_tap.ztf_dataquality": [
+  "measurement_id",
+  "oid"
+ ],
+ "alerce_tap.ztf_detection": [
+  "measurement_id",
+  "oid"
+ ],
+ "alerce_tap.ztf_forced_photometry": [
+  "measurement_id",
+  "oid"
+ ],
+ "alerce_tap.ztf_gaia": [
+  "oid"
+ ],
+ "alerce_tap.ztf_non_detection": [
+  "mjd",
+  "oid"
+ ],
+ "alerce_tap.ztf_object": [
+  "oid"
+ ],
+ "alerce_tap.ztf_ps1": [
+  "measurement_id",
+  "oid"
+ ],
+ "alerce_tap.ztf_reference": [
+  "oid",
+  "rfid"
+ ],
+ "alerce_tap.ztf_ss": [
+  "measurement_id",
+  "oid"
+ ]
+}

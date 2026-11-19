@@ -1,0 +1,16 @@
+[
+ "LC_classifier_ATAT_forced_phot(beta)",
+ "LC_classifier_BHRF_forced_phot(beta)",
+ "lc_classifier",
+ "lc_classifier_BHRF_forced_phot",
+ "lc_classifier_BHRF_forced_phot_periodic",
+ "lc_classifier_BHRF_forced_phot_stochastic",
+ "lc_classifier_BHRF_forced_phot_top",
+ "lc_classifier_BHRF_forced_phot_transient",
+ "lc_classifier_periodic",
+ "lc_classifier_stochastic",
+ "lc_classifier_top",
+ "lc_classifier_transient",
+ "stamp_classifier",
+ "stamp_classifier_2025_beta"
+]

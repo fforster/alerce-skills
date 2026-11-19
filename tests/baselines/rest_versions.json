@@ -1,0 +1,11 @@
+{
+ "aladin": "0.2.20",
+ "classifier": "0.2.20",
+ "crossmatch": "0.2.20",
+ "features": "0.2.20",
+ "lightcurve": "0.2.27",
+ "magstat": "0.2.20",
+ "object": "0.2.24",
+ "probability": "0.2.20",
+ "stamps": "0.2.25"
+}

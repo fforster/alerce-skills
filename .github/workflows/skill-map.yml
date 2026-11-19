@@ -1,0 +1,36 @@
+name: skill-map
+
+# Keeps the Mermaid skill map in README.md in sync with the alerce/ tree.
+# - pull requests: fail if the map is stale (run python tools/build_diagram.py)
+# - pushes to master: regenerate and commit the map when it changed
+on:
+  push:
+    branches: [master]
+    paths: ["alerce/**", "tools/**", "README.md"]
+  pull_request:
+    paths: ["alerce/**", "tools/**", "README.md"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  skill-map:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: check (pull requests)
+        if: github.event_name == 'pull_request'
+        run: python tools/build_diagram.py --check
+      - name: regenerate and commit (master)
+        if: github.event_name != 'pull_request'
+        run: |
+          python tools/build_diagram.py
+          if ! git diff --quiet README.md; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Regenerate README skill map" README.md
+            git push
+          fi

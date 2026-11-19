@@ -1,0 +1,39 @@
+name: claim-tests
+
+on:
+  schedule:
+    - cron: "17 12 * * 1"   # Mondays 12:17 UTC
+  workflow_dispatch:
+  push:
+    paths: ["alerce/**", "tests/**"]
+
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements-test.txt
+      - run: pytest -m offline
+
+  live:
+    needs: offline
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements-test.txt
+      - name: claims against ALeRCE
+        run: pytest -m "live and not drift"
+      - name: drift since baselines
+        if: always()
+        run: pytest -m drift
+      - name: book workflow queries
+        if: always()
+        run: pytest -m examples
+      - name: external services (informational)
+        if: always()
+        continue-on-error: true
+        run: pytest -m external

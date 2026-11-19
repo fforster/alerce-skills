@@ -1,0 +1,247 @@
+{
+ "aladin": {
+  "GET /": [],
+  "GET /healthcheck": [],
+  "POST /htmx/aladin": [
+   "oid*",
+   "survey*"
+  ]
+ },
+ "classifier": {
+  "GET /": [],
+  "GET /classes": [
+   "classifier_name*",
+   "classifier_version*",
+   "survey_id"
+  ],
+  "GET /classifiers": [
+   "classifier_name",
+   "survey_id"
+  ]
+ },
+ "crossmatch": {
+  "GET /": [],
+  "GET /crossmatch": [
+   "oid*",
+   "survey_id*"
+  ],
+  "GET /healthcheck": [],
+  "GET /htmx/crossmatch": [
+   "oid*",
+   "survey_id*"
+  ]
+ },
+ "features": {
+  "GET /": [],
+  "GET /features": [
+   "band",
+   "name",
+   "oid*",
+   "survey_id*",
+   "version"
+  ],
+  "GET /healthcheck": []
+ },
+ "lightcurve": {
+  "GET /": [],
+  "GET /conesearch/lightcurve_by_oid": [
+   "neighbors*",
+   "oid*",
+   "radius*",
+   "survey_id*"
+  ],
+  "GET /conesearch/objects_by_coordinates": [
+   "dec*",
+   "neighbors*",
+   "ra*",
+   "radius*"
+  ],
+  "GET /conesearch/objects_by_oid": [
+   "neighbors*",
+   "oid*",
+   "radius*",
+   "survey_id*"
+  ],
+  "GET /detections": [
+   "oid*",
+   "survey_id*"
+  ],
+  "GET /forced-photometry": [
+   "oid*",
+   "survey_id*"
+  ],
+  "GET /healthcheck": [],
+  "GET /htmx/download": [
+   "oid*",
+   "survey_id*"
+  ],
+  "GET /htmx/dr_detections": [
+   "dec*",
+   "oids",
+   "ra*"
+  ],
+  "GET /htmx/external_sources": [
+   "meandec",
+   "meanra",
+   "oid*",
+   "survey_id*"
+  ],
+  "GET /htmx/lightcurve": [
+   "oid*",
+   "survey_id*"
+  ],
+  "GET /htmx/periodogram": [
+   "oid*",
+   "survey_id*"
+  ],
+  "GET /lightcurve": [
+   "oid*",
+   "survey_id*"
+  ],
+  "GET /non_detections": [
+   "oid*",
+   "survey_id*"
+  ]
+ },
+ "magstat": {
+  "GET /": [],
+  "GET /htmx/mag": [
+   "oid*",
+   "survey_id"
+  ],
+  "GET /magstats": [
+   "oid*",
+   "survey_id*"
+  ]
+ },
+ "object": {
+  "GET /": [],
+  "GET /healthcheck": [],
+  "GET /htmx/list_objects": [
+   "class_name",
+   "classifier",
+   "count",
+   "dec",
+   "firstmjd_max",
+   "firstmjd_min",
+   "lastmjd_max",
+   "lastmjd_min",
+   "n_det_max",
+   "n_det_min",
+   "oid",
+   "order_by",
+   "order_mode",
+   "page",
+   "page_size",
+   "prob_lastmjd_max",
+   "prob_lastmjd_min",
+   "probability",
+   "ra",
+   "radius",
+   "ranking",
+   "shown_classifier",
+   "survey"
+  ],
+  "GET /htmx/object_information": [
+   "oid*",
+   "survey_id*"
+  ],
+  "GET /htmx/search_objects/": [
+   "survey_id"
+  ],
+  "GET /htmx/side_objects": [
+   "class_name",
+   "classifier",
+   "count",
+   "dec",
+   "firstmjd_max",
+   "firstmjd_min",
+   "lastmjd_max",
+   "lastmjd_min",
+   "n_det_max",
+   "n_det_min",
+   "oid",
+   "order_by",
+   "order_mode",
+   "page",
+   "page_size",
+   "prob_lastmjd_max",
+   "prob_lastmjd_min",
+   "probability",
+   "ra",
+   "radius",
+   "ranking",
+   "selected_oid",
+   "shown_classifier",
+   "survey"
+  ],
+  "GET /htmx/tns/": [
+   "dec*",
+   "ra*"
+  ],
+  "GET /list_objects": [
+   "class_name",
+   "classifier",
+   "count",
+   "dec",
+   "firstmjd",
+   "lastmjd",
+   "n_det",
+   "oid",
+   "order_by",
+   "order_mode",
+   "page",
+   "page_size",
+   "probability",
+   "ra",
+   "radius",
+   "ranking",
+   "survey",
+   "survey_id"
+  ],
+  "GET /object": [
+   "oid*",
+   "return_survey_extra",
+   "survey_id*"
+  ]
+ },
+ "probability": {
+  "GET /": [],
+  "GET /htmx/probabilities/{oid}": [
+   "oid*",
+   "survey*"
+  ],
+  "GET /probability": [
+   "classifier",
+   "oid*",
+   "survey_id"
+  ]
+ },
+ "stamps": {
+  "GET /": [],
+  "GET /avro": [
+   "measurement_id*",
+   "oid*",
+   "survey_id*"
+  ],
+  "GET /htmx/avro": [
+   "measurement_id*",
+   "oid*",
+   "survey_id*"
+  ],
+  "GET /htmx/stamp_card": [
+   "north_up",
+   "oid*",
+   "survey_id*"
+  ],
+  "GET /stamp": [
+   "file_format*",
+   "is_compressed",
+   "measurement_id*",
+   "oid*",
+   "stamp_type*",
+   "survey_id*"
+  ],
+  "POST /htmx/update_stamp_card": []
+ }
+}

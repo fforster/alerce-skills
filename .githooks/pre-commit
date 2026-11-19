@@ -1,0 +1,13 @@
+#!/bin/sh
+# Regenerate the README skill map before every commit (enable once per clone: git config core.hooksPath .githooks).
+# Standard-library Python only; adds README.md to the commit when the map changed.
+root=$(git rev-parse --show-toplevel) || exit 0
+command -v python3 >/dev/null 2>&1 || { echo "pre-commit: python3 not found, skill map not updated" >&2; exit 0; }
+before=$(git hash-object "$root/README.md")
+python3 "$root/tools/build_diagram.py" >/dev/null || exit 1
+after=$(git hash-object "$root/README.md")
+if [ "$before" != "$after" ]; then
+    git add "$root/README.md"
+    echo "pre-commit: README skill map regenerated and staged"
+fi
+exit 0

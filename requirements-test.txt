@@ -1,0 +1,9 @@
+numpy
+pandas
+requests
+pyvo
+astropy
+astroquery
+scipy
+pytest>=8
+alerce==2.4.0
